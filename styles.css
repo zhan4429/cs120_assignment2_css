@@ -1,0 +1,118 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  margin: 0 20px;
+  width: 90%;
+}
+
+.icons {
+  position: fixed;
+  top: 100px;
+  right: 35px;
+  z-index: -1;
+}
+.icons img {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: goldenrod;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #03adfc;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.ul-container {
+  border: 2px solid #64eb34;
+  width: 300px;
+  height: auto;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.food-image {
+  width: 250px;
+  height: 250px;
+  background-image: url("images/sandwich.jpeg");
+  background-size: cover;
+  float: left;
+  vertical-align: top;
+  margin: 10px 20px;
+}
+.food-text {
+  display: inline-block;
+  width: 90%;
+  max-width: 600px;
+  vertical-align: top;
+}
+
+.book-table {
+  max-width: 800px;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.book-table,
+.book-table th,
+.book-table td {
+  border: 1px solid black;
+}
+
+.book-table tr:nth-child(even) {
+  background-color: lightcyan;
+}
+
+.guest_book div {
+  margin-bottom: 5px;
+}
+
+label {
+  text-align: right;
+}
+
+.button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 30px;
+  width: auto;
+  font-size: 1rem;
+}
+.button:hover {
+  background-color: #fcba03;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0 10px;
+  }
+  .icons img {
+    width: 40px;
+    top: 20px;
+    right: 15px;
+    margin: 0;
+    display: block;
+  }
+  .food-container {
+    display: block;
+  }
+  .food-image {
+    margin: 0 auto;
+    float: none;
+  }
+  .food-text {
+    display: block;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .book-table {
+    max-width: 600px;
+  }
+}
